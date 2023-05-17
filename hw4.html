@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4</title>
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            margin: 0;
+        }
+        form {
+            text-align: center;
+            padding: 20px;
+        }
+        form input {
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="submit_get.php" method="get" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+      
+        <button type="submit">GET</button>
+    </form>
+      
+    <form action="submit_post.php" method="post" target="_self">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required placeholder="Enter your age"><br>
+      
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required placeholder="Enter your city"><br>
+      
+        <button type="submit">POST</button>
+    </form>
+      
+</body>
+</html>
